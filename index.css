@@ -4,7 +4,7 @@
   margin: 0;
 }
 .nav_bar {
-  background-color: #3c3c3c;
+  background-color: #11527d;
   height: 60px;
   width: 100%;
 }
@@ -28,6 +28,9 @@
   color: white;
   text-decoration: none;
   font-size: 15px;
+}
+.items a:hover {
+  color: #2d8b92;
 }
 .img_container {
   width: 100%;
@@ -53,6 +56,16 @@
   background-color: #1b58ff;
   color: white;
   cursor: pointer;
+}
+.btn:hover {
+  background-color: #0000d5;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+.project_button a:hover {
+  background-color: #0000d5;
+  color: white;
+  transition: 0.3s ease-in-out;
 }
 .iam {
   color: crimson;
@@ -205,6 +218,10 @@
   width: 25%;
   background-color: red;
   color: white;
+}
+#submit_mes:hover {
+  background-color: #e40000;
+  transition: 0.3 ease-in-out;
 }
 .copyright {
   text-align: center;
