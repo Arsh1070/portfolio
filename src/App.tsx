@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import MainHeader from './Components/header';
+import { Layout } from 'antd';
+import MainBody from './Components/mainBody';
+import CustomFooter from './Components/footer';
 
-function App() {
+const { Footer, Content, Header } = Layout;
+
+const App = (): JSX.Element => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <Header>
+        <MainHeader />
+      </Header>
+      <Content>
+        <MainBody />
+      </Content>
+      <Footer>
+        <CustomFooter />
+      </Footer>
+    </Layout>
   );
-}
+};
 
 export default App;

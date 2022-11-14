@@ -1,0 +1,128 @@
+.contact-upper {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 49.1% 49.1%;
+  gap: 20px;
+  padding: 0px 80px;
+
+  .address {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 20px;
+    display: flex;
+    border-radius: 5px;
+    .address-right {
+      padding-top: 9px;
+    }
+
+    .address-title {
+      font-size: 20px;
+      color: rgba(255, 255, 255, 0.5);
+      font-weight: 700;
+    }
+    .address-des {
+      line-height: 35px;
+      font-size: 14px;
+      .social-icons {
+        color: white;
+        font-size: 18px;
+        margin-right: 20px;
+      }
+      .social-icons:hover {
+        color: #ff4901;
+        transition: 0.4s ease-in-out;
+      }
+    }
+
+    .location {
+      width: 50px;
+      height: 50px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      font-size: 20px;
+      margin-right: 15px;
+      color: #ff4901;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+.contact-form {
+  margin-top: 20px;
+  padding: 0px 80px;
+
+  .form {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 30px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 100%;
+    text-align: center;
+    gap: 15px;
+
+    &-name {
+      display: grid;
+      grid-template-columns: 49% 49%;
+      gap: 20px;
+    }
+    &-sub {
+      display: grid;
+      grid-template-columns: 100%;
+    }
+    .submit {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 20px;
+      color: white;
+      background-color: #ff4901;
+    }
+    .submit:hover {
+      cursor: pointer;
+      background-color: #ff4901db;
+      transition: 0.4s ease-in-out;
+    }
+
+    .inputTag {
+      border: none;
+      padding: 15px;
+      font-size: 16px;
+      background-color: rgba(255, 255, 255, 0.08);
+      color: white;
+      width: 100%;
+      border-radius: 5px;
+    }
+    .inputTag:focus {
+      outline: none;
+      background-color: rgba(255, 255, 255, 0.1);
+      transition: 0.3s ease-in-out;
+    }
+  }
+}
+
+@media (max-width: 920px) {
+  .contact-upper {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 100%;
+    gap: 20px;
+    padding: 0px 80px;
+  }
+  .contact-form {
+    .form {
+      grid-template-columns: 100%;
+      text-align: center;
+      &-name {
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 15px;
+      }
+      &-sub {
+        display: grid;
+        grid-template-columns: 100%;
+      }
+    }
+  }
+}
