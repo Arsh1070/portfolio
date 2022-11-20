@@ -1,5 +1,5 @@
 import { Button, Card, Form, Image, Input, Progress } from 'antd';
-import TextArea from 'antd/lib/input/TextArea';
+import TextArea from 'antd/es/input/TextArea';
 import React from 'react';
 
 const MainBody = (): JSX.Element => {
@@ -27,8 +27,8 @@ const MainBody = (): JSX.Element => {
             </a>
           </div>
         </div>
-        <div className='self-img'>
-          <Image src='./assets/arshPic(1).jpg' alt='pic' preview={false} />
+        <div>
+          <Image src='/assets/arshPic(1).jpg' alt='pic' preview={false} />
         </div>
       </section>
       <section id='about'>
@@ -64,7 +64,7 @@ const MainBody = (): JSX.Element => {
               experience as a MERN Stack Developer in startup(s) and have a Knowledge about MERN
               stack technologies.
             </p>
-            <Button className='cv'>DOWNLOAD CV</Button>
+            <button className='cv'>DOWNLOAD CV</button>
           </div>
         </div>
       </section>
@@ -155,16 +155,12 @@ const MainBody = (): JSX.Element => {
         <h1 className='about-heading'>My Resume</h1>
         <div className='resume'>
           <h3>WORK EXPERIENCE</h3>
-          <Card
-            title={
-              <div className='title'>
-                <h1 className='title-1'>2022-Present</h1>
-                <h3 className='title-2'>Software Engineer</h3>
-                <h6 className='title-3'>Perpetual Block AG | Pune, India</h6>
-              </div>
-            }
-            className='card'
-          >
+          <Card className='card'>
+            <div className='title'>
+              <h1 className='title-1'>2022-Present</h1>
+              <h3 className='title-2'>Software Engineer</h3>
+              <h6 className='title-3'>Perpetual Block AG | Pune, India</h6>
+            </div>
             <ul className='content'>
               <li className='content-1'>
                 <span className='dot'></span>
@@ -188,16 +184,12 @@ const MainBody = (): JSX.Element => {
               </li>
             </ul>
           </Card>
-          <Card
-            title={
-              <div className='title'>
-                <h1 className='title-1'>2021-2022</h1>
-                <h3 className='title-2'> Full Stack Web Development Intern</h3>
-                <h6 className='title-3'>Newton School | India</h6>
-              </div>
-            }
-            className='card'
-          >
+          <Card className='card'>
+            <div className='title'>
+              <h1 className='title-1'>2021-2022</h1>
+              <h3 className='title-2'> Full Stack Web Development Intern</h3>
+              <h6 className='title-3'>Newton School | India</h6>
+            </div>
             <ul className='content'>
               <li className='content-1'>
                 <span className='dot'></span>
@@ -214,16 +206,12 @@ const MainBody = (): JSX.Element => {
             </ul>
           </Card>
           <h3 className='education'>EDUCATION</h3>
-          <Card
-            title={
-              <div className='title'>
-                <h1 className='title-1'>2015-2020</h1>
-                <h3 className='title-2'>Bachelor&#39;s Degree in Mechanical Engineering</h3>
-                <h6 className='title-3'>Rajasthan Technical University | Kota, India</h6>
-              </div>
-            }
-            className='card'
-          >
+          <Card className='card'>
+            <div className='title'>
+              <h1 className='title-1'>2015-2020</h1>
+              <h3 className='title-2'>Bachelor&#39;s Degree in Mechanical Engineering</h3>
+              <h6 className='title-3'>Rajasthan Technical University | Kota, India</h6>
+            </div>
             <ul className='content'>
               <li className='content-1'>
                 <span className='dot'></span>
@@ -236,16 +224,12 @@ const MainBody = (): JSX.Element => {
               </li>
             </ul>
           </Card>
-          <Card
-            title={
-              <div className='title'>
-                <h1 className='title-1'>2013</h1>
-                <h3 className='title-2'>High School, Board of Secondary Education, Rajasthan</h3>
-                <h6 className='title-3'>BHOPALWALA ARYA SR. SEC. SCHOOL | Sriganganagar, India</h6>
-              </div>
-            }
-            className='card'
-          >
+          <Card className='card'>
+            <div className='title'>
+              <h1 className='title-1'>2013</h1>
+              <h3 className='title-2'>High School, Board of Secondary Education, Rajasthan</h3>
+              <h6 className='title-3'>BHOPALWALA ARYA SR. SEC. SCHOOL | Sriganganagar, India</h6>
+            </div>
             <ul className='content'>
               <li className='content-1'>
                 <span className='dot'></span>
@@ -374,10 +358,20 @@ const MainBody = (): JSX.Element => {
                 <span className='tech'>React.js</span>
               </p>
               <p className='appIcon'>
-                <a href='#' target='_blank' rel='noreferrer' className='social-icons'>
+                <a
+                  href='https://github.com/Arsh1070/NewsApp'
+                  target='_blank'
+                  rel='noreferrer'
+                  className='social-icons'
+                >
                   <i className='bi bi-display'></i>
                 </a>
-                <a href='#' target='_blank' rel='noreferrer' className='social-icons'>
+                <a
+                  href='https://github.com/Arsh1070/NewsApp'
+                  target='_blank'
+                  rel='noreferrer'
+                  className='social-icons'
+                >
                   <i className='bi bi-github'></i>
                 </a>
               </p>
@@ -511,7 +505,7 @@ const MainBody = (): JSX.Element => {
               <TextArea rows={6} placeholder='Message' className='inputTag' />
             </Form.Item>
 
-            <Form.Item>
+            <Form.Item style={{ display: 'flex', justifyContent: 'center' }}>
               <Button type='primary' htmlType='submit' className='submit'>
                 Send Message
               </Button>

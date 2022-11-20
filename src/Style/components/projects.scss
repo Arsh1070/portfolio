@@ -5,6 +5,7 @@
   gap: 20px;
   background-color: black;
   padding: 0px 80px;
+
   //height: 205vh;
   &-card {
     //width: 50%;
@@ -13,6 +14,8 @@
     color: #fff;
     padding: 40px;
     border-radius: 5px;
+    border: none;
+
     .projects-card-img {
       width: 100%;
       height: 300px;

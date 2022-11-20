@@ -59,7 +59,7 @@
     border-radius: 5px;
     display: grid;
     grid-template-columns: 100%;
-    text-align: center;
+
     gap: 15px;
 
     &-name {
@@ -72,7 +72,11 @@
       grid-template-columns: 100%;
     }
     .submit {
-      padding: 10px 20px;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
       font-size: 16px;
       border: none;
       border-radius: 20px;
@@ -82,7 +86,7 @@
     .submit:hover {
       cursor: pointer;
       background-color: #ff4901db;
-      transition: 0.4s ease-in-out;
+      transition: 0.2s ease-in-out;
     }
 
     .inputTag {
@@ -95,7 +99,7 @@
       border-radius: 5px;
     }
     .inputTag:focus {
-      outline: none;
+      outline: none !important;
       background-color: rgba(255, 255, 255, 0.1);
       transition: 0.3s ease-in-out;
     }

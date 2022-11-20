@@ -1,7 +1,11 @@
 .skills {
   background-color: black;
-  height: 45vh;
   color: white;
+
+  .ant-progress.ant-progress-show-info .ant-progress-outer {
+    margin-inline-end: 0px;
+    padding-inline-end: 0px;
+  }
   .ant-progress-inner {
     background-color: #1a1a1a;
     border-radius: 5px;
@@ -17,15 +21,15 @@
   display: grid;
   grid-template-columns: 45.33% 45.33%;
   column-gap: 7%;
-
+  justify-content: space-between;
+  gap: 30px;
   padding: 0px 80px !important;
 }
 
 @media (max-width: 700px) {
   .skills {
-    height: 85vh;
     display: grid;
     grid-template-columns: 100%;
-    row-gap: 5%;
+    //row-gap: 5%;
   }
 }
