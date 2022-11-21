@@ -17,16 +17,36 @@ const MainBody = (): JSX.Element => {
           </strong>
           <strong>A Full Stack Web Developer</strong>
           <div className='section-1-left-icons'>
-            <a href='#' className='social-icons'>
+            <a
+              href='https://twitter.com/ArshBrarAB'
+              target='_blank'
+              rel='noreferrer'
+              className='social-icons'
+            >
               <i className='bi bi-twitter'></i>
             </a>
-            <a href='#' className='social-icons'>
+            <a
+              href='https://www.facebook.com/profile.php?id=100004794289269'
+              target='_blank'
+              rel='noreferrer'
+              className='social-icons'
+            >
               <i className='bi bi-facebook'></i>
             </a>
-            <a href='#' className='social-icons'>
+            <a
+              href='https://www.instagram.com/arsh_1070/'
+              target='_blank'
+              rel='noreferrer'
+              className='social-icons'
+            >
               <i className='bi bi-instagram'></i>
             </a>
-            <a href='#' className='social-icons'>
+            <a
+              href='https://www.linkedin.com/in/arsh1070'
+              target='_blank'
+              rel='noreferrer'
+              className='social-icons'
+            >
               <i className='bi bi-linkedin'></i>
             </a>
           </div>
@@ -455,16 +475,36 @@ const MainBody = (): JSX.Element => {
             <div className='address-right'>
               <strong className='address-title'>Social Profiles</strong>
               <p className='address-des'>
-                <a href='#' className='social-icons'>
+                <a
+                  href='https://twitter.com/ArshBrarAB'
+                  target='_blank'
+                  rel='noreferrer'
+                  className='social-icons'
+                >
                   <i className='bi bi-twitter'></i>
                 </a>
-                <a href='#' className='social-icons'>
+                <a
+                  href='https://www.facebook.com/profile.php?id=100004794289269'
+                  target='_blank'
+                  rel='noreferrer'
+                  className='social-icons'
+                >
                   <i className='bi bi-facebook'></i>
                 </a>
-                <a href='#' className='social-icons'>
+                <a
+                  href='https://www.instagram.com/arsh_1070/'
+                  target='_blank'
+                  rel='noreferrer'
+                  className='social-icons'
+                >
                   <i className='bi bi-instagram'></i>
                 </a>
-                <a href='#' className='social-icons'>
+                <a
+                  href='https://www.linkedin.com/in/arsh1070'
+                  target='_blank'
+                  rel='noreferrer'
+                  className='social-icons'
+                >
                   <i className='bi bi-linkedin'></i>
                 </a>
               </p>
