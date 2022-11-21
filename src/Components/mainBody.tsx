@@ -1,6 +1,10 @@
 import { Button, Card, Form, Image, Input, Progress } from 'antd';
 import TextArea from 'antd/es/input/TextArea';
-import React from 'react';
+import myPic from '../assets/arshPic(1).jpg';
+import myPortfolioPic from '../assets/myPortfolio.png';
+import myNewsAppPic from '../assets/newsApp.png';
+import myStayTunePic from '../assets/stayTune.png';
+import myTipCalculatorPic from '../assets/tipCalculator.png';
 
 const MainBody = (): JSX.Element => {
   return (
@@ -28,7 +32,7 @@ const MainBody = (): JSX.Element => {
           </div>
         </div>
         <div>
-          <Image src='/assets/arshPic(1).jpg' alt='pic' preview={false} />
+          <Image src={myPic} alt='pic' preview={false} />
         </div>
       </section>
       <section id='about'>
@@ -246,7 +250,7 @@ const MainBody = (): JSX.Element => {
             cover={
               <Image
                 alt='example'
-                src='./assets/stayTune.png'
+                src={myStayTunePic}
                 className='projects-card-img'
                 preview={false}
               />
@@ -292,7 +296,7 @@ const MainBody = (): JSX.Element => {
             cover={
               <Image
                 alt='example'
-                src='./assets/newsApp.png'
+                src={myNewsAppPic}
                 className='projects-card-img'
                 preview={false}
               />
@@ -337,7 +341,7 @@ const MainBody = (): JSX.Element => {
             cover={
               <Image
                 alt='example'
-                src='./assets/myPortfolio.png'
+                src={myPortfolioPic}
                 className='projects-card-img'
                 preview={false}
               />
@@ -381,7 +385,7 @@ const MainBody = (): JSX.Element => {
             cover={
               <Image
                 alt='example'
-                src='./assets/tipCalculator.png'
+                src={myTipCalculatorPic}
                 className='projects-card-img'
                 preview={false}
               />
