@@ -69,7 +69,7 @@ const MainBody = (): JSX.Element => {
             </li>
             <li className='about-subheading'>
               <strong>Email:</strong>
-              <span>arshbrarasb626@gmail.com</span>
+              <span>arshdeepsinghofficial1070@gmail.com</span>
             </li>
             <li className='about-subheading'>
               <strong>Address:</strong>
@@ -88,7 +88,14 @@ const MainBody = (): JSX.Element => {
               experience as a MERN Stack Developer in startup(s) and have a Knowledge about MERN
               stack technologies.
             </p>
-            <button className='cv'>DOWNLOAD CV</button>
+            <a
+              href={'/documents/arsh_updated_resume.pdf'}
+              target='_blank'
+              rel='noreferrer'
+              download={'/documents/arsh_updated_resume.pdf'}
+            >
+              <button className='cv'>DOWNLOAD CV</button>
+            </a>
           </div>
         </div>
       </section>
@@ -460,7 +467,7 @@ const MainBody = (): JSX.Element => {
             <i className='bi bi-envelope location'></i>
             <div className='address-right'>
               <strong className='address-title'>Email Me</strong>
-              <p className='address-des'>arshbrarasb626@gmail.com</p>
+              <p className='address-des'>arshdeepsinghofficial1070@gmail.com</p>
             </div>
           </div>
           <div className='address'>
