@@ -7,6 +7,8 @@ import myStayTunePic from '../assets/stayTune.png';
 import myTipCalculatorPic from '../assets/tipCalculator.png';
 
 const MainBody = (): JSX.Element => {
+  // eslint-disable-next-line no-console
+  console.log(process.env.PUBLIC_URL);
   return (
     <>
       <section className='section-1' id='home'>
@@ -89,10 +91,10 @@ const MainBody = (): JSX.Element => {
               stack technologies.
             </p>
             <a
-              href={'/documents/arsh_updated_resume.pdf'}
+              href={`${process.env.PUBLIC_URL}` + '/arsh_updated_resume.pdf'}
               target='_blank'
               rel='noreferrer'
-              download={'/documents/arsh_updated_resume.pdf'}
+              download={`${process.env.PUBLIC_URL}` + '/arsh_updated_resume.pdf'}
             >
               <button className='cv'>DOWNLOAD CV</button>
             </a>
