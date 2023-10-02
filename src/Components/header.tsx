@@ -1,4 +1,5 @@
 import { Link } from 'react-scroll';
+import { NAVBAR_LINKS } from '../Constants';
 
 const MainHeader = (): JSX.Element => {
   const handleClick = (): void => {
@@ -18,62 +19,37 @@ const MainHeader = (): JSX.Element => {
   };
 
   return (
-    <header>
-      <nav className='navbar'>
-        <div className='navbar-logo'>
-          <strong>
-            <Link activeClass='active1' smooth spy to='home' offset={-50}>
-              ARSH
-            </Link>
-          </strong>
-        </div>
+    <nav className='navbar'>
+      <div className='navbar-logo'>
+        <strong>
+          <Link activeClass='active1' smooth spy to='home' offset={-50}>
+            ARSH
+          </Link>
+        </strong>
+      </div>
 
-        <ul className='navbar-menu'>
-          <li className='navbar-item '>
-            <Link activeClass='active' smooth spy to='home' className='navbar-link' offset={-50}>
-              Home
-            </Link>
-          </li>
-          <li className='navbar-item'>
-            <Link activeClass='active' smooth spy to='about' className='navbar-link' offset={-50}>
-              About
-            </Link>
-          </li>
-          <li className='navbar-item'>
-            <Link activeClass='active' smooth spy to='skills' className='navbar-link' offset={-50}>
-              Skills
-            </Link>
-          </li>
-          <li className='navbar-item'>
-            <Link activeClass='active' smooth spy to='resume' className='navbar-link' offset={-50}>
-              Resume
-            </Link>
-          </li>
-          <li className='navbar-item'>
+      <ul className='navbar-menu'>
+        {NAVBAR_LINKS.map((navItem) => (
+          <li key={navItem.id} className='navbar-item '>
             <Link
               activeClass='active'
               smooth
               spy
-              to='projects'
+              to={navItem.linkRef}
               className='navbar-link'
               offset={-50}
             >
-              Projects
+              {navItem.title}
             </Link>
           </li>
-          <li className='navbar-item'>
-            <Link activeClass='active' smooth spy to='contact' className='navbar-link' offset={-50}>
-              Contact
-            </Link>
-          </li>
-        </ul>
-        <div className='hamburger' onClick={handleClick}>
-          <span className='bar'></span>
-          <span className='bar'></span>
-          <span className='bar'></span>
-        </div>
-      </nav>
-    </header>
+        ))}
+      </ul>
+      <div className='hamburger' onClick={handleClick}>
+        <span className='bar'></span>
+        <span className='bar'></span>
+        <span className='bar'></span>
+      </div>
+    </nav>
   );
 };
 

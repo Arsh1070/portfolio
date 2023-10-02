@@ -9,17 +9,6 @@ const App = (): JSX.Element => {
       <MainBody />
       <CustomFooter />
     </>
-    /*  <Layout>
-      <Header>
-        <MainHeader />
-      </Header>
-      <Content>
-        <MainBody />
-      </Content>
-      <Footer>
-        <CustomFooter />
-      </Footer>
-    </Layout> */
   );
 };
 
