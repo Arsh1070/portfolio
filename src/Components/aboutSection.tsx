@@ -1,7 +1,6 @@
 import React from 'react';
 import { PERSONAL_INFO } from '../Constants';
 
-
 const AboutComponent: React.FC = () => {
   return (
     <section id='about'>

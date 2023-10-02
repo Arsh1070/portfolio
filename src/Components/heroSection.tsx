@@ -3,7 +3,6 @@ import { Image } from 'antd';
 import myPic from '../assets/arshPic(1).jpg';
 import { SOCIAL_ICONS } from '../Constants';
 
-
 const HeroComponent: React.FC = () => {
   return (
     <section className='section-1' id='home'>
